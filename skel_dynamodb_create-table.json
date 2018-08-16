@@ -1,0 +1,19 @@
+{
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "UserID",
+            "AttributeType": "S"
+        }
+    ],
+    "TableName": "ikedayu_user",
+    "KeySchema": [
+        {
+            "AttributeName": "UserID",
+            "KeyType": "HASH"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 5,
+        "WriteCapacityUnits": 5
+    }
+}
